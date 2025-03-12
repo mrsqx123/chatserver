@@ -1,0 +1,8 @@
+# ninja log v6
+1	23	1741767324484627357	build.ninja	4e47b91fdaebdbd
+1	697	1741764149120629181	src/server/CMakeFiles/ChatServer.dir/main.cpp.o	8a736a6de8421397
+2	2324	1741767297785856686	src/server/CMakeFiles/ChatServer.dir/chatserver.cpp.o	2f08566088403dfb
+2324	2723	1741767300105106428	/home/sqx/projects/ChatServer/my_chatserver/bin/ChatServer	829327d21ec72368
+2	1682	1741767297785856686	src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o	8cbaa618d2207b8c
+1	1695	1741767667241959812	src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o	8cbaa618d2207b8c
+1695	2122	1741767668926265987	/home/sqx/projects/ChatServer/my_chatserver/bin/ChatServer	829327d21ec72368
