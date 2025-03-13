@@ -105,24 +105,31 @@ build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_ChatServer: phony || .
 
+build src/server/CMakeFiles/ChatServer.dir/UserModel.cpp.o: CXX_COMPILER__ChatServer_unscanned_Debug /home/sqx/projects/ChatServer/my_chatserver/src/server/UserModel.cpp || cmake_object_order_depends_target_ChatServer
+  DEP_FILE = src/server/CMakeFiles/ChatServer.dir/UserModel.cpp.o.d
+  FLAGS = -g -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
+  OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
+  OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
+
 build src/server/CMakeFiles/ChatServer.dir/chatserver.cpp.o: CXX_COMPILER__ChatServer_unscanned_Debug /home/sqx/projects/ChatServer/my_chatserver/src/server/chatserver.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/chatserver.cpp.o.d
   FLAGS = -g -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
+  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
 
 build src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o: CXX_COMPILER__ChatServer_unscanned_Debug /home/sqx/projects/ChatServer/my_chatserver/src/server/chatservice.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o.d
   FLAGS = -g -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
+  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
 
 build src/server/CMakeFiles/ChatServer.dir/main.cpp.o: CXX_COMPILER__ChatServer_unscanned_Debug /home/sqx/projects/ChatServer/my_chatserver/src/server/main.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/main.cpp.o.d
   FLAGS = -g -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
+  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
 
@@ -134,9 +141,9 @@ build src/server/CMakeFiles/ChatServer.dir/main.cpp.o: CXX_COMPILER__ChatServer_
 #############################################
 # Link the executable /home/sqx/projects/ChatServer/my_chatserver/bin/ChatServer
 
-build /home/sqx/projects/ChatServer/my_chatserver/bin/ChatServer: CXX_EXECUTABLE_LINKER__ChatServer_Debug src/server/CMakeFiles/ChatServer.dir/chatserver.cpp.o src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o src/server/CMakeFiles/ChatServer.dir/main.cpp.o
+build /home/sqx/projects/ChatServer/my_chatserver/bin/ChatServer: CXX_EXECUTABLE_LINKER__ChatServer_Debug src/server/CMakeFiles/ChatServer.dir/UserModel.cpp.o src/server/CMakeFiles/ChatServer.dir/chatserver.cpp.o src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o src/server/CMakeFiles/ChatServer.dir/main.cpp.o
   FLAGS = -g -g
-  LINK_LIBRARIES = -lmuduo_net  -lmuduo_base  -lpthread
+  LINK_LIBRARIES = -lmuduo_net  -lmuduo_base  -lpthread  -lmysqlclient
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   POST_BUILD = :
   PRE_LINK = :

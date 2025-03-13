@@ -12,4 +12,4 @@ add_executable(ChatServer  ${SOURCES})
 
 # 排除不需要的文件
 #list(FILTER SOURCES EXCLUDE REGEX ".*_test.cpp")
-target_link_libraries(ChatServer muduo_net muduo_base pthread)
+target_link_libraries(ChatServer muduo_net muduo_base pthread mysqlclient)
