@@ -105,31 +105,52 @@ build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_ChatServer: phony || .
 
+build src/server/CMakeFiles/ChatServer.dir/FriendModel.cpp.o: CXX_COMPILER__ChatServer_unscanned_Debug /home/sqx/projects/ChatServer/my_chatserver/src/server/FriendModel.cpp || cmake_object_order_depends_target_ChatServer
+  DEP_FILE = src/server/CMakeFiles/ChatServer.dir/FriendModel.cpp.o.d
+  FLAGS = -g -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/include/server/model -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
+  OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
+  OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
+
 build src/server/CMakeFiles/ChatServer.dir/UserModel.cpp.o: CXX_COMPILER__ChatServer_unscanned_Debug /home/sqx/projects/ChatServer/my_chatserver/src/server/UserModel.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/UserModel.cpp.o.d
   FLAGS = -g -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
+  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/include/server/model -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
 
 build src/server/CMakeFiles/ChatServer.dir/chatserver.cpp.o: CXX_COMPILER__ChatServer_unscanned_Debug /home/sqx/projects/ChatServer/my_chatserver/src/server/chatserver.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/chatserver.cpp.o.d
   FLAGS = -g -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
+  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/include/server/model -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
 
 build src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o: CXX_COMPILER__ChatServer_unscanned_Debug /home/sqx/projects/ChatServer/my_chatserver/src/server/chatservice.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o.d
   FLAGS = -g -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
+  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/include/server/model -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
+  OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
+  OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
+
+build src/server/CMakeFiles/ChatServer.dir/groupmodel.cpp.o: CXX_COMPILER__ChatServer_unscanned_Debug /home/sqx/projects/ChatServer/my_chatserver/src/server/groupmodel.cpp || cmake_object_order_depends_target_ChatServer
+  DEP_FILE = src/server/CMakeFiles/ChatServer.dir/groupmodel.cpp.o.d
+  FLAGS = -g -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/include/server/model -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
 
 build src/server/CMakeFiles/ChatServer.dir/main.cpp.o: CXX_COMPILER__ChatServer_unscanned_Debug /home/sqx/projects/ChatServer/my_chatserver/src/server/main.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/main.cpp.o.d
   FLAGS = -g -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
+  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/include/server/model -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
+  OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
+  OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
+
+build src/server/CMakeFiles/ChatServer.dir/offlinemessagemodel.cpp.o: CXX_COMPILER__ChatServer_unscanned_Debug /home/sqx/projects/ChatServer/my_chatserver/src/server/offlinemessagemodel.cpp || cmake_object_order_depends_target_ChatServer
+  DEP_FILE = src/server/CMakeFiles/ChatServer.dir/offlinemessagemodel.cpp.o.d
+  FLAGS = -g -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/include/server/model -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
 
@@ -141,7 +162,7 @@ build src/server/CMakeFiles/ChatServer.dir/main.cpp.o: CXX_COMPILER__ChatServer_
 #############################################
 # Link the executable /home/sqx/projects/ChatServer/my_chatserver/bin/ChatServer
 
-build /home/sqx/projects/ChatServer/my_chatserver/bin/ChatServer: CXX_EXECUTABLE_LINKER__ChatServer_Debug src/server/CMakeFiles/ChatServer.dir/UserModel.cpp.o src/server/CMakeFiles/ChatServer.dir/chatserver.cpp.o src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o src/server/CMakeFiles/ChatServer.dir/main.cpp.o
+build /home/sqx/projects/ChatServer/my_chatserver/bin/ChatServer: CXX_EXECUTABLE_LINKER__ChatServer_Debug src/server/CMakeFiles/ChatServer.dir/FriendModel.cpp.o src/server/CMakeFiles/ChatServer.dir/UserModel.cpp.o src/server/CMakeFiles/ChatServer.dir/chatserver.cpp.o src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o src/server/CMakeFiles/ChatServer.dir/groupmodel.cpp.o src/server/CMakeFiles/ChatServer.dir/main.cpp.o src/server/CMakeFiles/ChatServer.dir/offlinemessagemodel.cpp.o
   FLAGS = -g -g
   LINK_LIBRARIES = -lmuduo_net  -lmuduo_base  -lpthread  -lmysqlclient
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
@@ -174,7 +195,70 @@ build src/server/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build src/server/rebuild_cache: phony src/server/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/sqx/projects/ChatServer/my_chatserver/src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ChatClient
+
+
+#############################################
+# Order-only phony target for ChatClient
+
+build cmake_object_order_depends_target_ChatClient: phony || .
+
+build src/client/CMakeFiles/ChatClient.dir/main.cpp.o: CXX_COMPILER__ChatClient_unscanned_Debug /home/sqx/projects/ChatServer/my_chatserver/src/client/main.cpp || cmake_object_order_depends_target_ChatClient
+  DEP_FILE = src/client/CMakeFiles/ChatClient.dir/main.cpp.o.d
+  FLAGS = -g -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/sqx/projects/ChatServer/my_chatserver/include -I/home/sqx/projects/ChatServer/my_chatserver/include/server -I/home/sqx/projects/ChatServer/my_chatserver/include/server/db -I/home/sqx/projects/ChatServer/my_chatserver/include/server/model -I/home/sqx/projects/ChatServer/my_chatserver/thirdparty
+  OBJECT_DIR = src/client/CMakeFiles/ChatClient.dir
+  OBJECT_FILE_DIR = src/client/CMakeFiles/ChatClient.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ChatClient
+
+
+#############################################
+# Link the executable /home/sqx/projects/ChatServer/my_chatserver/bin/ChatClient
+
+build /home/sqx/projects/ChatServer/my_chatserver/bin/ChatClient: CXX_EXECUTABLE_LINKER__ChatClient_Debug src/client/CMakeFiles/ChatClient.dir/main.cpp.o
+  FLAGS = -g -g
+  LINK_LIBRARIES = -lpthread
+  OBJECT_DIR = src/client/CMakeFiles/ChatClient.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = /home/sqx/projects/ChatServer/my_chatserver/bin/ChatClient
+  TARGET_PDB = ChatClient.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/client/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/sqx/projects/ChatServer/my_chatserver/cmake-build-debug/src/client && /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/client/edit_cache: phony src/client/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/client/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/sqx/projects/ChatServer/my_chatserver/cmake-build-debug/src/client && /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/sqx/projects/ChatServer/my_chatserver -B/home/sqx/projects/ChatServer/my_chatserver/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/client/rebuild_cache: phony src/client/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
+
+build ChatClient: phony /home/sqx/projects/ChatServer/my_chatserver/bin/ChatClient
 
 build ChatServer: phony /home/sqx/projects/ChatServer/my_chatserver/bin/ChatServer
 
@@ -193,7 +277,14 @@ build all: phony src/all
 #############################################
 # Folder: /home/sqx/projects/ChatServer/my_chatserver/cmake-build-debug/src
 
-build src/all: phony src/server/all
+build src/all: phony src/server/all src/client/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/sqx/projects/ChatServer/my_chatserver/cmake-build-debug/src/client
+
+build src/client/all: phony /home/sqx/projects/ChatServer/my_chatserver/bin/ChatClient
 
 # =============================================================================
 
@@ -209,14 +300,14 @@ build src/server/all: phony /home/sqx/projects/ChatServer/my_chatserver/bin/Chat
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-C.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-CXX.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /home/sqx/projects/ChatServer/my_chatserver/CMakeLists.txt /home/sqx/projects/ChatServer/my_chatserver/src/CMakeLists.txt /home/sqx/projects/ChatServer/my_chatserver/src/server/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-C.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-CXX.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /home/sqx/projects/ChatServer/my_chatserver/CMakeLists.txt /home/sqx/projects/ChatServer/my_chatserver/src/CMakeLists.txt /home/sqx/projects/ChatServer/my_chatserver/src/client/CMakeLists.txt /home/sqx/projects/ChatServer/my_chatserver/src/server/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-C.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-CXX.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /home/sqx/projects/ChatServer/my_chatserver/CMakeLists.txt /home/sqx/projects/ChatServer/my_chatserver/src/CMakeLists.txt /home/sqx/projects/ChatServer/my_chatserver/src/server/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
+build /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-C.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-CXX.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux.cmake /home/sqx/.cache/JetBrains/RemoteDev/dist/c0d814f62eb66_CLion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /home/sqx/projects/ChatServer/my_chatserver/CMakeLists.txt /home/sqx/projects/ChatServer/my_chatserver/src/CMakeLists.txt /home/sqx/projects/ChatServer/my_chatserver/src/client/CMakeLists.txt /home/sqx/projects/ChatServer/my_chatserver/src/server/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
 
 
 #############################################
