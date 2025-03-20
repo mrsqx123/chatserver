@@ -6,14 +6,12 @@
 #include <chrono>
 #include <ctime>
 #include <unordered_map>
-#include <functional>
 
 using namespace std;
 using json = nlohmann::json;
 
 #include <unistd.h>
 #include <sys/socket.h>
-#include <sys/types.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <semaphore.h>
@@ -52,7 +50,7 @@ void mainMenu(int);
 void showCurrentUserData();
 
 // 聊天客户端程序实现，main线程用作发送线程，子线程用作接收线程
-int main(int argc, char **argv) {
+int main(int argc, char *argv[]) {
     if (argc < 3) {
         cerr << "command invalid! example: ./ChatClient 127.0.0.1 6000" << endl;
         exit(-1);
@@ -60,7 +58,7 @@ int main(int argc, char **argv) {
 
     // 解析通过命令行参数传递的ip和port
     char *ip = argv[1];
-    uint16_t port = atoi(argv[2]);
+    uint16_t port = stoi(argv[2]);
 
     // 创建client端的socket
     int clientfd = socket(AF_INET, SOCK_STREAM, 0);
@@ -70,8 +68,7 @@ int main(int argc, char **argv) {
     }
 
     // 填写client需要连接的server信息ip+port
-    sockaddr_in server;
-    memset(&server, 0, sizeof(sockaddr_in));
+    sockaddr_in server{};
 
     server.sin_family = AF_INET;
     server.sin_port = htons(port);
@@ -294,6 +291,11 @@ void readTaskHandler(int clientfd) {
         if (LOGIN_ACK_MSG == msgtype) {
             doLoginResponse(js); // 处理登录响应的业务逻辑
             sem_post(&rwsem);    // 通知主线程，登录结果处理完成
+            continue;
+        }
+
+        if (ADD_FRIEND_MSG == msgtype) {
+            cout << "已经成功添加id：" << js["friendid"] << "的好友" << endl;
             continue;
         }
 

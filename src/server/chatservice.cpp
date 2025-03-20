@@ -88,11 +88,37 @@ void ChatService::login(const TcpConnectionPtr &conn, json &js, Timestamp timest
                 response["friends"] = friString;
             }
 
+            // 查询用户的群组信息
+            vector<Group> groupuserVec = _groupModel.queryGroups(id);
+            if (!groupuserVec.empty()) {
+                // group:[{groupid:[xxx, xxx, xxx, xxx]}]
+                vector<string> groupV;
+                for (Group &group: groupuserVec) {
+                    json grpjson;
+                    grpjson["id"] = group.getId();
+                    grpjson["groupname"] = group.getName();
+                    grpjson["groupdesc"] = group.getDesc();
+                    vector<string> userV;
+                    for (GroupUser &user: group.getUsers()) {
+                        json js;
+                        js["id"] = user.getId();
+                        js["name"] = user.getName();
+                        js["state"] = user.getState();
+                        js["role"] = user.getRole();
+                        userV.push_back(js.dump());
+                    }
+                    grpjson["users"] = userV;
+                    groupV.push_back(grpjson.dump());
+                }
+
+                response["groups"] = groupV;
+            }
+
             conn->send(response.dump());
         }
     } else {
         //登录失败
-        response["msgid"] = id;
+        response["msgid"] = LOGIN_ACK_MSG;
         response["errno"] = 1;
         response["errmsg"] = "用户名不存在或密码错误";
         conn->send((response.dump()));
@@ -145,6 +171,7 @@ void ChatService::addFriend(const TcpConnectionPtr &conn, json &js, Timestamp ti
     int userid = js["id"].get<int>();
     int friendid = js["friendid"].get<int>();
     _friendModel.insert(userid, friendid);
+    conn->send(js.dump());
 }
 
 void ChatService::oneChat(const TcpConnectionPtr &conn, json &js, Timestamp timestamp) {
@@ -169,7 +196,7 @@ void ChatService::oneChat(const TcpConnectionPtr &conn, json &js, Timestamp time
 
     //to id离线，需要存储离线消息表
     OfflineMsgModel _offlineMsgModel;
-    _offlineMsgModel.insert(js["toid"], js["msg"]);
+    _offlineMsgModel.insert(js["toid"], js.dump());
 }
 
 // 创建群组业务
