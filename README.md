@@ -7,7 +7,7 @@
 #CMakeLists.txt可以实现对server，client的编译，如果需要交叉编译，需要使用项目中toolchain.cmake文件，配置交叉编译环境。
 
 #使用的工具版本：
-  操作系统UBUNTU20.04 MYSQL8 nginx1.6 UBOOT为2020.04  linux版本为5.4.3 builtroot工具为2022.02.8
+  操作系统UBUNTU22.04 MYSQL8 nginx1.6 UBOOT为2020.04  linux版本为5.4.3 builtroot工具为2022.02.8
 
 在sdk_imx6ull中已经配置好makefile编译环境和流程，使用
 make uboot  make linux   make buildroot可以直接编译好uboot，linux以及对应的rootfs
