@@ -19,3 +19,5 @@ make linux_menuconfig
 make buildroot_menuconfig  
 make busybox 
 可以自定义配置，并且自动替换配置文件，然后直接编译即可。
+
+这个项目部署是需要把编译好的chatclient放到imx6ull开发板上执行，通过sdio wifi和主机运行的服务器进行tcp通信，这样客户端就可以运行在这个linux开发板上和server通信执行业务。
