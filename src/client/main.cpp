@@ -52,7 +52,7 @@ void showCurrentUserData();
 // 聊天客户端程序实现，main线程用作发送线程，子线程用作接收线程
 int main(int argc, char *argv[]) {
     if (argc < 3) {
-        cerr << "command invalid! example: ./ChatClient 127.0.0.1 6000" << endl;
+        cerr << "command invalid! example: ./ChatClient 127.0.0.1 8000" << endl;
         exit(-1);
     }
 

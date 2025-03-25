@@ -1,0 +1,50 @@
+echo DISAPPTESTPACK
+setenv a1size 40f68d
+setenv a2size 1207ea5
+setenv a3size 2de6
+setenv a1crc 329338bc
+setenv a2crc 2316e7d0
+setenv a3crc a4a2464f
+setenv a1crc_fl c000010
+setenv a2crc_fl c000110
+setenv a3crc_fl c000210
+setenv a1crc_ddr c000000
+setenv a2crc_ddr c000100
+setenv a3crc_ddr c000200
+setenv a1ofst 1000
+setenv a2ofst 41068d
+setenv a3ofst 1618532
+if test ${sf_offs} -eq 0; then setenv sf_offs 600000; else echo "OFFSET: $sf_offs"; fi
+setexpr fla1 $a1ofst + $sf_offs
+setexpr fla2 $a2ofst + $sf_offs
+setexpr fla3 $a3ofst + $sf_offs
+setenv sf_load_1 'sf read $a1 $fla1 $a1size'
+setenv sf_load_2 'sf read $a2 $fla2 $a2size'
+setenv sf_load_3 'sf read $a3 $fla3 $a3size'
+
+if test ${sf_offs_app2} -eq 0; then setenv sf_offs_app2 1f00000; else echo "OFFSET_APP2: $sf_offs_app2"; fi
+setexpr fla1_app2 $a1ofst + $sf_offs_app2
+setexpr fla2_app2 $a2ofst + $sf_offs_app2
+setexpr fla3_app2 $a3ofst + $sf_offs_app2
+setenv sf_load_1_app2 'sf read $a1 $fla1_app2 $a1size'
+setenv sf_load_2_app2 'sf read $a2 $fla2_app2 $a2size'
+setenv sf_load_3_app2 'sf read $a3 $fla3_app2 $a3size'
+
+mw.l $a1crc_fl $a1crc
+mw.l $a2crc_fl $a2crc
+mw.l $a3crc_fl $a3crc
+
+setenv sf_load 'sf probe && run sf_load_1 && run sf_load_2 && run sf_load_3'
+setenv sf_load_app2 'sf probe && run sf_load_1_app2 && run sf_load_2_app2 && run sf_load_3_app2'
+
+run sf_load 
+
+crc32 $a1 $a1size $a1crc_ddr
+crc32 $a2 $a2size $a2crc_ddr
+crc32 $a3 $a3size $a3crc_ddr
+
+if cmp $a1crc_ddr $a1crc_fl 1; then echo "uImage CRC OK"; else run sf_load_app2; fi
+if cmp $a2crc_ddr $a2crc_fl 1; then echo "uInitrd CRC OK"; else run sf_load_app2; fi
+if cmp $a3crc_ddr $a3crc_fl 1; then echo "dtb CRC OK"; else run sf_load_app2; fi
+
+bootm $a1 $a2 $a3

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "netdevice.h": "c",
+        "dtc-parser.tab.h": "c",
+        "types.h": "c"
+    }
+}
